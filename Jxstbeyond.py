@@ -103,7 +103,7 @@ new_hwid = generate_hwid()[:16]
 hw = gethwid()[:15]
 mypcname = os.getlogin()
 NameProject = ("Jxstbeyond-By-Jenos")
-Version = ("V.1")
+Version = ("1.1")
 hwiduuid = f'''{NameProject}-{Version} [{hw}-{mypcname}-{new_hwid}]''' 
 ipinfo = requests.get('https://ipinfo.io/json')
 ipinfojson = ipinfo.json()
@@ -627,23 +627,51 @@ def warring(event):
 def warring_page(event):
     messagebox.showerror("PRP - Sercurity", "คุณอยู่ในหน้าต่างนี้อยู่แล้ว ")
 def join_page_one(event):
+    files_to_remove = [
+    'C:/Users/Public/Videos/Backup_System.bat',
+    'C:/Users/Public/Videos/Beyonder_Punch.bat',
+    'C:/Users/Public/Videos/Celestials_Puch.bat',
+    'C:/Users/Public/Videos/Entity_Punch.exe',
+    'C:/Users/Public/Videos/Hermes_God.bat',
+    'C:/Users/Public/Videos/Boost_FPS.bat',
+    'C:/Users/Public/Videos/Install_Powerplan.bat',
+    'C:/Users/Public/Videos/Low_ping.bat',
+    'C:/Users/Public/Videos/Clear_All_Temp.bat'
+     ]
+
     for file_path in files_to_remove:
-        if os.path.exists(file_path):
+        try:
             os.remove(file_path)
-            print(f"File {file_path} has been removed.")
-        else:
-            print(f"File {file_path} not found.")
-            window_two.destroy()
-            page_one()
+            print(f'Removed: {file_path}')
+        except FileNotFoundError:
+           print(f'File not found: {file_path}')
+        except Exception as e:
+            print(f'Error deleting {file_path}: {e}')
+    window_two.destroy()
+    page_one()
 def join_page_two(event):
+    files_to_remove = [
+    'C:/Users/Public/Videos/Backup_System.bat',
+    'C:/Users/Public/Videos/Beyonder_Punch.bat',
+    'C:/Users/Public/Videos/Celestials_Puch.bat',
+    'C:/Users/Public/Videos/Entity_Punch.exe',
+    'C:/Users/Public/Videos/Hermes_God.bat',
+    'C:/Users/Public/Videos/Boost_FPS.bat',
+    'C:/Users/Public/Videos/Install_Powerplan.bat',
+    'C:/Users/Public/Videos/Low_ping.bat',
+    'C:/Users/Public/Videos/Clear_All_Temp.bat'
+     ]
+
     for file_path in files_to_remove:
-        if os.path.exists(file_path):
+        try:
             os.remove(file_path)
-            print(f"File {file_path} has been removed.")
-        else:
-            print(f"File {file_path} not found.")
-            window_one.destroy()
-            page_two()
+            print(f'Removed: {file_path}')
+        except FileNotFoundError:
+           print(f'File not found: {file_path}')
+        except Exception as e:
+            print(f'Error deleting {file_path}: {e}')
+    window_one.destroy()
+    page_two()
 
 def page_one ():
 
