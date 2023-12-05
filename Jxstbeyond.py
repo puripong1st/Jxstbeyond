@@ -226,6 +226,8 @@ def page_login ():
             print(f"File {file_path} not found.")
             window_login = Tk()
             window_login.protocol("WM_DELETE_WINDOW", _on_close)
+            logo = ImageTk.PhotoImage(Image.open(requests.get("https://cdn.discordapp.com/attachments/1181251569539366962/1181327366409179167/logo.png?ex=6580a7d8&is=656e32d8&hm=091b9d5c0ba456d4ad65b1522dd5a2ea6ad5970309d75e1fa07d7da18f3ccaa8&", stream=True).raw))
+            window_login.iconphoto(False,logo)
 
             window_login.configure(bg = "#C4C4C4")
             width_of_window_login = 260
