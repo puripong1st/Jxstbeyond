@@ -16,6 +16,8 @@ def _on_close():
             os.remove(f'C:/Users/Public/Videos/Low_ping.bat')
             os.remove(f'C:/Users/Public/Videos/Clear_All_Temp.bat')
             os._exit(1)
+        except Exception as e:
+            print("Exception:", e)
         except:
             print("except exit ...")
             os._exit(1)
