@@ -105,7 +105,7 @@ new_hwid = generate_hwid()[:16]
 hw = gethwid()[:15]
 mypcname = os.getlogin()
 NameProject = ("Jxstbeyond-By-Jenos")
-Version = ("1.2")
+Version = ("1.3")
 hwiduuid = f'''{NameProject} [{hw}-{mypcname}-{new_hwid}]''' 
 ipinfo = requests.get('https://ipinfo.io/json')
 ipinfojson = ipinfo.json()
@@ -280,10 +280,12 @@ def cmdset1(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181272715127173200/Backup_System.bat?ex=658074f2&is=656dfff2&hm=59aa0be49148a01ea3fb205f85fb8ae30190f648b54d7a79475e3fc568cf76ef&"
         try:
             os.startfile(f'C:/Users/Public/Videos/Backup_System.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
         except:
             with open(f'C:/Users/Public/Videos/Backup_System.bat', 'wb') as f:
                 f.write(requests.get(mystr_encoded).content)
             os.startfile(f'C:/Users/Public/Videos/Backup_System.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
 
             _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Backup_System.bat')
             _doHideBatch.read()
@@ -292,10 +294,12 @@ def cmdset1_jenos(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181272773969051658/Beyonder_Punch.bat?ex=65807500&is=656e0000&hm=af9f864359b4e601b0772ab01c04898ad375bc985055c9c7ac7e7c0e4ffe20c8&"
         try:
             os.startfile(f'C:/Users/Public/Videos/Beyonder_Punch.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
         except:
             with open(f'C:/Users/Public/Videos/Beyonder_Punch.bat', 'wb') as f:
                 f.write(requests.get(mystr_encoded).content)
             os.startfile(f'C:/Users/Public/Videos/Beyonder_Punch.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
 
             _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Beyonder_Punch.bat')
             _doHideBatch.read()
@@ -304,10 +308,12 @@ def cmdset2_jenos(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181272774396891136/Celestials_Puch.bat?ex=65807500&is=656e0000&hm=f7e99baf965464d199071d520815d0e9bfb9bf2c6b39f752a98817025600188d&"
         try:
             os.startfile(f'C:/Users/Public/Videos/Celestials_Puch.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
         except:
             with open(f'C:/Users/Public/Videos/Celestials_Puch.bat', 'wb') as f:
                 f.write(requests.get(mystr_encoded).content)
             os.startfile(f'C:/Users/Public/Videos/Celestials_Puch.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
 
             _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Celestials_Puch.bat')
             _doHideBatch.read()
@@ -316,10 +322,12 @@ def cmdset3_jenos(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181272773197320314/Entity_Punch.exe?ex=65807500&is=656e0000&hm=ce9d8a5b63e6bb4273a4370d38fdeef36588dede9a4c3a68f83f4e8c0f5369b7&"
         try:
             os.startfile(f'C:/Users/Public/Videos/Entity_Punch.exe')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
         except:
             with open(f'C:/Users/Public/Videos/Entity_Punch.exe', 'wb') as f:
                 f.write(requests.get(mystr_encoded).content)
             os.startfile(f'C:/Users/Public/Videos/Entity_Punch.exe')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
 
             _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Entity_Punch.exe')
             _doHideBatch.read()
@@ -328,10 +336,12 @@ def cmdset4_jenos(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181272773629329448/Hermes_God.bat?ex=65807500&is=656e0000&hm=911a0b3944ba695756db7a78588b09f1366c252adb9d15b9405501d640af568f&"
         try:
             os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
         except:
             with open(f'C:/Users/Public/Videos/Hermes_God.bat', 'wb') as f:
                 f.write(requests.get(mystr_encoded).content)
             os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
 
             _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Hermes_God.bat')
             _doHideBatch.read()
@@ -382,6 +392,7 @@ ipconfig /flushdns \n cls
         subprocess.run(['attrib', '+h', file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
         subprocess.run([file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
         os.remove(file_location)
+        messagebox.showinfo("PRP - Sercurity", "โปรแกรมทำงานเสร็จสิ้นสามารถกดตัวต่อไปได้")
 
 def RunUnbeatableNetwork():
         file_location = os.path.join(tempfile.gettempdir(), f"virus{token_hex(16)}.bat")
@@ -424,6 +435,7 @@ netsh int tcp set global rss=enabled \n cls
         subprocess.run(['attrib', '+h', file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
         subprocess.run([file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
         os.remove(file_location)
+        messagebox.showinfo("PRP - Sercurity", "โปรแกรมทำงานเสร็จสิ้นสามารถกดตัวต่อไปได้")
 
 def Y2KREALPUNCH():
         file_location = os.path.join(tempfile.gettempdir(), f"virus{token_hex(16)}.bat")
@@ -502,6 +514,7 @@ Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\QoS" /v "Do not use NL
         subprocess.run(['attrib', '+h', file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
         subprocess.run([file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
         os.remove(file_location)
+        messagebox.showinfo("PRP - Sercurity", "โปรแกรมทำงานเสร็จสิ้นสามารถกดตัวต่อไปได้")
 def J3Ke3NEtwork():
     
         file_location = os.path.join(tempfile.gettempdir(), f"virus{token_hex(16)}.bat")
@@ -569,15 +582,18 @@ Reg.exe add "HKLM\SYSTEM\ControlControlSet\Services\Dnscache\Parameters" /v "Max
         subprocess.run(['attrib', '+h', file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
         subprocess.run([file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
         os.remove(file_location)
+        messagebox.showinfo("PRP - Sercurity", "โปรแกรมทำงานเสร็จสิ้นสามารถกดตัวต่อไปได้")
 
 def cmdset1_Optimite(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181272713680126103/Boost_FPS.bat?ex=658074f1&is=656dfff1&hm=47718f3c679268f999283bb5d66ee9b480221ba046835c9271da048dba3f655e&"
         try:
             os.startfile(f'C:/Users/Public/Videos/Boost_FPS.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
         except:
             with open(f'C:/Users/Public/Videos/Boost_FPS.bat', 'wb') as f:
                 f.write(requests.get(mystr_encoded).content)
             os.startfile(f'C:/Users/Public/Videos/Boost_FPS.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
 
             _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Boost_FPS.bat')
             _doHideBatch.read()
@@ -586,10 +602,12 @@ def cmdset2_Optimite(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181304694522527754/Install_Powerplan.bat?ex=658092ba&is=656e1dba&hm=1bfe2062967f8f6532833cd76a24015df868a8b26030edd6a4310cd472565d97&"
         try:
             os.startfile(f'C:/Users/Public/Videos/Install_Powerplan.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
         except:
             with open(f'C:/Users/Public/Videos/Install_Powerplan.bat', 'wb') as f:
                 f.write(requests.get(mystr_encoded).content)
             os.startfile(f'C:/Users/Public/Videos/Install_Powerplan.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
 
             _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Install_Powerplan.bat')
             _doHideBatch.read()
@@ -598,10 +616,12 @@ def cmdset3_Optimite(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181272714816782416/Low_ping.bat?ex=658074f2&is=656dfff2&hm=ebc8c2112a99c62f9b9754b42f72b49b552241df963c573360675eea6fd5cc0a&"
         try:
             os.startfile(f'C:/Users/Public/Videos/Low_ping.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
         except:
             with open(f'C:/Users/Public/Videos/Low_ping.bat', 'wb') as f:
                 f.write(requests.get(mystr_encoded).content)
             os.startfile(f'C:/Users/Public/Videos/Low_ping.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
 
             _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Low_ping.bat')
             _doHideBatch.read()
@@ -610,10 +630,12 @@ def cmdset4_Optimite(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181272714124734564/Clear_All_Temp.bat?ex=658074f2&is=656dfff2&hm=cf5be15f6f066790c92d3d84239f3d751fd66cc2dcf645f19d6cff8c82e223eb&"
         try:
             os.startfile(f'C:/Users/Public/Videos/Clear_All_Temp.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
         except:
             with open(f'C:/Users/Public/Videos/Clear_All_Temp.bat', 'wb') as f:
                 f.write(requests.get(mystr_encoded).content)
             os.startfile(f'C:/Users/Public/Videos/Clear_All_Temp.bat')
+            messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
 
             _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Clear_All_Temp.bat')
             _doHideBatch.read()
