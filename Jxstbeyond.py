@@ -18,7 +18,7 @@ def _on_close():
             os._exit(1)
         except Exception as e:
             print("Exception:", e)
-        except:
+        finally:
             print("except exit ...")
             os._exit(1)
 class AntiDebug(Thread):
@@ -105,7 +105,7 @@ new_hwid = generate_hwid()[:16]
 hw = gethwid()[:15]
 mypcname = os.getlogin()
 NameProject = ("Jxstbeyond-By-Jenos")
-Version = ("1.1")
+Version = ("1.2")
 hwiduuid = f'''{NameProject} [{hw}-{mypcname}-{new_hwid}]''' 
 ipinfo = requests.get('https://ipinfo.io/json')
 ipinfojson = ipinfo.json()
@@ -146,7 +146,8 @@ def discordusercanlogin():
                 Status : เข้าระบบสำเร็จ 
                 HWID : {hwiduuid}
                 IP : {ip}
-                โลเคชั่น : {loc}""",
+                โลเคชั่น : {loc}
+                ระบบปฎิบัติการที่ใช้เปิดโปรแกรม : {platform.platform()}""",
             "color": 0x1cff00,
         }
         ],
@@ -174,7 +175,8 @@ def discordusercantlogin():
                 Status : เข้าระบบสำเร็จ 
                 HWID : {hwiduuid}
                 IP : {ip}
-                โลเคชั่น : {loc}""",
+                โลเคชั่น : {loc}
+                ระบบปฎิบัติการที่ใช้เปิดโปรแกรม : {platform.platform()}""",
               "color": 0xcf0a0a,
             }
           ],
